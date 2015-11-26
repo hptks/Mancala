@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.armadillo.team.sunkagame" >
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MenuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help.HelpPointListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_helppoint_list"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Help.HelpPointDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_helppoint_detail"
+            android:parentActivityName=".Help.HelpPointListActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Help.HelpPointListActivity" />
+        </activity>
+        <activity
+            android:name=".SunkaGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_sunka_game"
+            android:parentActivityName=".MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AIActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ScoresActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Scores"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Winner"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Scores"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".WinnerActivity"
+            android:label="@string/title_activity_winner" >
+        </activity>
+    </application>
+
+</manifest>

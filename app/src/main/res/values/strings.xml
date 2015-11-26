@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Sunka Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="Play_menu_text">Play against Human</string>
+    <string name="play_comp_text">Play against computer</string>
+    <string name="play_human">Play against human</string>
+    <string name="play_comp">Play against computer</string>
+    <string name="help_text">How to play</string>
+    <string name="title_helppoint_list">Help Points</string>
+    <string name="title_helppoint_detail">Help Point Detail</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_sunka_game">SunkaGameActivity</string>
+    <string name="player2name">Player 2</string>
+    <string name="player2store">0</string>
+    <string name="tray">7</string>
+    <string name="player1name">Player 1</string>
+    <string name="store">0</string>
+    <string name="Score_button">Players scores</string>
+    <string name="sort_win">Sort by number of wins</string>
+    <string name="sort_lose">Sort by number of loses</string>
+    <string name="submit">Play</string>
+    <string name="title_activity_sunka_game_multiplayer">multiplier</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_winner">WinnerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>
